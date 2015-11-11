@@ -1,0 +1,107 @@
+@import "{}/client/scss/aux";
+
+.menu {
+  width: $menuWidth;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $dark;
+  z-index: 11;
+  padding: $topperHeight 0 $footerHeight;
+  text-align: center;
+
+  &-content {
+    height: 100%;
+    padding-bottom: $footerFeaturesHeight;
+    position: relative;
+  }
+
+  &-items {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &-item {
+    color: white;
+    height: 4.5rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    position: relative;
+    will-change: background;
+    font-weight: 500;
+    @include transition(background 0.3s linear);
+
+    &:before, &:after {
+      top: 0;
+      will-change: background;
+      @include pseudo;
+      @include transition(background 0.3s linear);
+    }
+
+    &:before {
+      width: 0.4rem;
+      height: 100%;
+      left: 0;
+    }
+
+    &:after {
+      bottom: 0;
+      margin: auto;
+      right: 4.1rem;
+      @include rounded;
+      @include size(0.6rem);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+
+    &:hover, &.active {
+      background: $dark2;
+
+      &:before {
+        background: $orange;
+      }
+    }
+
+    &.unread {
+      &:after {
+        background: $orange;
+      }
+    }
+  }
+
+  &-features {
+    width: 100%;
+    height: $footerFeaturesHeight;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-feature {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-settings {
+    width: 13rem;
+    height: 4rem;
+  }
+
+  &-switch {
+    font-size: 1.2rem;
+    color: $blue;
+    text-decoration: underline;
+    width: 7.5rem;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &-logout {
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,46 @@
+@import "{}/client/scss/all";
+
+html, body, .app-container {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  min-width: 48rem;
+  min-height: 29.5rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  background: $bg;
+  color: $dark;
+  font-size: 1.6rem;
+}
+
+button {
+  color: white;
+  white-space: nowrap;
+  will-change: background;
+  @include transition(background .3s ease-in-out);
+}
+
+.topper, .footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.app-container {
+  padding: $topperHeight 0 $footerHeight $menuWidth;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-content, .app-modules {
+  height: 100%;
+}
+
+.app-modules {
+  height: 100%;
+  width: 100%;
+}

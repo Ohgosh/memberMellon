@@ -1,0 +1,17 @@
+<template name="layout">
+  <div class="app-container">
+
+    {{> topper}}
+
+    {{> menu}}
+
+    <div class="app-content">
+      <div class="app-modules">
+        {{> yield}}
+      </div>
+    </div>
+
+    {{> footer}}
+
+  </div>
+</template>

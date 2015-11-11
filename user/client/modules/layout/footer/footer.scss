@@ -1,0 +1,11 @@
+@import "{}/client/scss/aux";
+
+.footer {
+  bottom: 0;
+  height: $footerHeight;
+  background: $dark2;
+  z-index: 12;
+  text-align: center;
+  color: $white05;
+  font-size: 1.4rem;
+}

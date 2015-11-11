@@ -1,0 +1,34 @@
+{
+  "servers": [
+    {
+      "host": "",
+      "username": "root",
+      "pem": "~/.ssh/id_rsa",
+      "env": {}
+    }
+  ],
+
+  "setupMongo": false,
+
+  "setupNode": false,
+
+  "nodeVersion": "0.10.40",
+
+  "setupPhantom": false,
+
+  "enableUploadProgressBar": true,
+
+  "appName": "konarUser",
+
+  "app": "./",
+
+  "env": {
+    "PORT": 8081,
+    "ROOT_URL": "",
+    "MONGO_URL": "mongodb://127.0.0.1:13666/membermelon",
+    "MONGO_OPLOG_URL": "mongodb://127.0.0.1:13666/local",
+    "BUNDLE_PATH": "/opt/user/app"
+  },
+
+  "deployCheckWaitTime": 30
+}

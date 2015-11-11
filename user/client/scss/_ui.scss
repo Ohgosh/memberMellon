@@ -1,0 +1,71 @@
+@include remmer(1, 10);
+
+@include font-face("PT Sans", "/font/PT_Sans_Regular/PT_Sans_Regular");
+@include font-face("PT Sans", "/font/PT_Sans_Bold/PT_Sans_Bold", bold);
+
+@include font-face("Roboto", "/font/Roboto_Light/Roboto_Light", 300);
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+table tr {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+  color: inherit;
+	text-decoration: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
+input, textarea, button {
+	border-radius: 0.2rem;
+}
+
+input, textarea {
+	width: 100%;
+	border: none;
+	background: rgba(19, 120, 190, 0.21);
+	padding: 0 1rem;
+}
+
+input {
+	text-align: center;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea {
+	resize: none;
+}
+
+button {
+	border: none;
+	color: white;
+	font-weight: 500;
+}
+
+img {
+	display: block;
+}

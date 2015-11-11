@@ -1,0 +1,69 @@
+<template name="menu">
+
+  <div class="menu{{#if isActiveMenu}} active{{/if}}">
+    <div class="menu-content">
+
+      <div class="menu-items">
+        <div class="display-table">
+          <div class="display-cell">
+
+            <div class="menu-item active">
+              <div class="ui-valign">
+                {{_ 'menu.home'}}
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="ui-valign">
+                {{_ 'menu.events'}}
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="ui-valign">
+                {{_ 'menu.memberships'}}
+              </div>
+            </div>
+
+            <div class="menu-item unread">
+              <div class="ui-valign">
+                {{_ 'menu.notifications'}}
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="ui-valign">
+                {{_ 'menu.orders'}}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-features">
+        <div class="ui-valign">
+
+          <div class="menu-feature">
+            <button class="menu-settings green">
+              {{_ 'menu.settings'}}
+            </button>
+          </div>
+
+          <div class="menu-feature menu-switch">
+            {{_ 'menu.switch'}}
+          </div>
+
+          <div class="menu-feature">
+            <span class="menu-logout">
+              {{_ 'menu.logout'}}
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>

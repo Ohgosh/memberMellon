@@ -1,0 +1,43 @@
+@import './helpers/_select2';
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ui-valign {
+  top: 50%;
+  position: relative;
+  @include transform(translateY(-50%));
+}
+
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+.display-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.half {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+
+	&.right {
+		float: right;
+	}
+}

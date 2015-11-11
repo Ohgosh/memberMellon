@@ -1,0 +1,21 @@
+<template name="modalWindow">
+  <div class="mw">
+    <div class="mw-close t-close"></div>
+    <div class="mw-title">{{#if title}}{{_ title}}{{/if}}</div>
+    <div class="mw-desc">{{#if message}}{{_ message}}{{/if}}</div>
+    <div class="mw-btnblock left">
+      {{#if cancelBtn}}
+        <div class="ui-btn t-cancel">{{_ 'popup.cancel'}}</div>
+      {{/if}}
+    </div>
+    <div class="mw-btnblock right">
+      <div class="ui-btn t-ok">
+        {{#if cancelBtn}}
+          {{_ 'popup.proceed'}}
+        {{else}}
+          {{_ 'popup.ok'}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>

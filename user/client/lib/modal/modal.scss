@@ -1,0 +1,89 @@
+@import '{}/client/scss/_aux';
+
+.mw {
+  position: fixed;
+  box-sizing: border-box;
+  width: 20rem;
+  height: 12rem;
+  border: 2px solid #04548f;
+  padding: 2rem 1.8% 0;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  background: #ffffff;
+  @include transform(translateX(-50%) translateY(-50%));
+  &-close {
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    right: 1.2rem;
+    top: 0.9rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      top: 5%;
+      width: 127%;
+      height: 3px;
+      background: #003366;
+    }
+    &::after {
+      @include transform-origin(100% 50%);
+      right: 5%;
+      @include transform(rotateZ(-45deg));
+    }
+    &::before {
+      left: 5%;
+      @include transform-origin(0% 50%);
+      @include transform(rotateZ(45deg));
+    }
+  }
+  &-title {
+    font-family: $arial;
+    color: #04548f;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 70%;
+    letter-spacing: -0.015rem;
+  }
+  &-desc {
+    font-family: $arial;
+    color: #000000;
+    font-size: 0.93rem;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    line-height: 1.1;
+    width: 80%;
+  }
+  &-list {
+    font-family: $arial;
+    color: #003366;
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-top: 1.5rem;
+  }
+  &-btnblock {
+    position: absolute;
+    bottom: 4%;
+    width: 38%;
+    height: 23%;
+    &.left {
+      left: 4%;
+    }
+    &.right {
+      right: 4%;
+    }
+  }
+  &-note {
+    font-family: $arial;
+    color: #949494;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.04;
+    margin-top: 0.5rem;
+  }
+}

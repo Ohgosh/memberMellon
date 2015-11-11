@@ -1,0 +1,14 @@
+systemLog:
+  destination: file
+  path: "l:/webserwers/home/membermelon/membermelon.log"
+  logAppend: true
+storage:
+  engine: wiredTiger
+  dbPath: "l:/data/membermelon"
+  journal:
+    enabled: true
+net:
+  bindIp: PERFECTION-PC
+  port: 13666
+replication:
+  replSetName: 'membermelon'

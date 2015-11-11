@@ -1,0 +1,142 @@
+@import '{}/client/scss/_aux';
+
+.app-container {
+  .select2-container {
+    text-align: left;
+    text-transform: none;
+    font-weight: normal;
+
+    @include gt(1920) {
+  		height: 5.5rem;
+  	}
+
+  	@include gt(1136, 1919) {
+  		height: 3.3rem;
+  	}
+
+  	@include gt(800, 1135) {
+  		height: 2.8rem;
+  	}
+
+  	@include lt(799) {
+  		height: 2.3rem;
+  	}
+  }
+
+  .select2-dropdown {
+  	border: none;
+  }
+}
+
+.select2-container {
+  &.select2-container--default {
+    &.select2-container--open {
+      .select2-selection--single {
+        .select2-selection__arrow {
+          b {
+
+          }
+        }
+      }
+    }
+
+    .select2-results__option {
+      padding: 0 1rem;
+
+      &[aria-selected="true"], &:first-child {
+        display: none;
+      }
+
+      @include gt(1920) {
+        font-size: 2.4rem;
+        line-height: 5.5rem;
+      }
+
+      @include gt(1136, 1919) {
+        font-size: 1.4rem;
+        line-height: 3.3rem;
+      }
+
+      @include gt(800, 1135) {
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+      }
+
+      @include lt(799) {
+        font-size: 1rem;
+        line-height: 2.3rem;
+      }
+    }
+
+    .select2-selection--single {
+      background: rgba(19, 120, 190, 0.21);
+      border-radius: 0;
+      border: none;
+
+      .select2-selection__rendered {
+        height: 100%;
+        padding: 0 1rem;
+        color: blue;
+
+        @include gt(1920) {
+      		line-height: 5.5rem;
+      	}
+
+      	@include gt(1136, 1919) {
+      		line-height: 3.3rem;
+      	}
+
+      	@include gt(800, 1135) {
+      		line-height: 2.8rem;
+      	}
+
+      	@include lt(799) {
+      		line-height: 2.3rem;
+      	}
+      }
+
+      .select2-selection__arrow {
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: blue;
+
+        @include gt(1920) {
+      		width: 5.5rem;
+      	}
+
+      	@include gt(1136, 1919) {
+      		width: 3.3rem;
+      	}
+
+      	@include gt(800, 1135) {
+      		width: 2.8rem;
+      	}
+
+      	@include lt(799) {
+      		width: 2.3rem;
+      	}
+
+        b {
+          width: 54.8%;
+          height: 100%;
+          border: none;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background: url('/img/select2/arrow.png') no-repeat center / contain;
+        }
+      }
+    }
+  }
+
+  .selection {
+    height: 100%;
+    display: block;
+  }
+
+  .select2-selection {
+    height: 100%;
+  }
+}
