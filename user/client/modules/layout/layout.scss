@@ -39,6 +39,25 @@ button {
   padding-bottom: $footerHeight;
 }
 
+.page-wrap {
+  width: 83rem;
+  margin: auto;
+  padding: 5rem 0 3rem;
+}
+
+.page-block {
+  margin-bottom: 5rem;
+}
+
+.page-block-label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.page-block-content {
+  margin-top: 2.2rem;
+}
+
 .page-topper {
   height: 21.6rem;
   margin-bottom: 3rem;
@@ -68,13 +87,14 @@ button {
 
 .panel-body {
   padding: 4rem 1.1rem 0;
+  overflow: hidden;
 }
 
 .panel-list-item {
   height: 5.1rem;
   position: relative;
 
-  &:last-child {
+  &.total {
     .panel-list-text {
       color: $gray2;
     }
@@ -132,6 +152,16 @@ button {
   bottom: 2rem;
   @include absolute-horizontal-centered;
   @include size(24rem 5rem);
+}
+
+.page-content-panel {
+  width: 40.7rem;
+  height: 100%;
+  float: left;
+
+  &:not(:last-child) {
+    margin-right: 1.6rem;
+  }
 }
 
 .button-icon {

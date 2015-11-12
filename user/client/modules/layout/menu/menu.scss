@@ -1,5 +1,37 @@
 @import "{}/client/scss/aux";
 
+.app-container {
+  &.orange {
+    .menu-item {
+      &.active, &:hover {
+        &:before {
+          background: $orange;
+        }
+      }
+    }
+
+    .menu-switch {
+      color: $blue;
+      width: 7.5rem;
+    }
+  }
+
+  &.blue {
+    .menu-item {
+      &.active, &:hover {
+        &:before {
+          background: $blue;
+        }
+      }
+    }
+
+    .menu-switch {
+      color: $orange;
+      width: 10.5rem;
+    }
+  }
+}
+
 .menu {
   width: $menuWidth;
   position: fixed;
@@ -28,13 +60,13 @@
     position: relative;
     will-change: background;
     font-weight: 500;
-    @include transition(background 0.3s linear);
+    @include transition(background 0.3s ease-in-out);
 
     &:before, &:after {
       top: 0;
       will-change: background;
       @include pseudo;
-      @include transition(background 0.3s linear);
+      @include transition(background 0.3s ease-in-out);
     }
 
     &:before {
@@ -108,6 +140,8 @@
 
   &-feature {
     cursor: pointer;
+    display: block;
+    margin: auto;
 
     &:not(:last-child) {
       margin-bottom: 4rem;
@@ -125,9 +159,7 @@
 
   &-switch {
     font-size: 1.2rem;
-    color: $blue;
     text-decoration: underline;
-    width: 7.5rem;
     margin: auto;
   }
 

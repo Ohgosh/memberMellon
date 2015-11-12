@@ -1,0 +1,15 @@
+@import '{}/client/scss/_aux';
+
+.admin {
+  &-request {
+    margin-bottom: 5rem;
+  }
+
+  &-request-panel {
+    padding: 0 1.1rem;
+  }
+
+  &-request-content {
+    height: 5.7rem;
+  }
+}

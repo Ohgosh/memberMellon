@@ -1,0 +1,12 @@
+@import '{}/client/scss/_aux';
+
+.admin {
+  &-review-content {
+    height: 21.6rem;
+  }
+
+  &-statistics-icon {
+    background: url('/img/admin/statistics.png') no-repeat center / contain;
+    @include size(1.9rem);
+  }
+}

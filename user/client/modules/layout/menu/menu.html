@@ -31,21 +31,33 @@
               </div>
             </div>
 
-            <div class="menu-item unread">
-              <div class="menu-item-inside">
-                <div class="ui-valign">
-                  {{_ 'menu.notifications'}}
+            {{#if $.Session.equals 'appType' 'user'}}
+              <div class="menu-item unread">
+                <div class="menu-item-inside">
+                  <div class="ui-valign">
+                    {{_ 'menu.notifications'}}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="menu-item">
-              <div class="menu-item-inside">
-                <div class="ui-valign">
-                  {{_ 'menu.orders'}}
+              <div class="menu-item">
+                <div class="menu-item-inside">
+                  <div class="ui-valign">
+                    {{_ 'menu.orders'}}
+                  </div>
                 </div>
               </div>
-            </div>
+            {{/if}}
+
+            {{#if $.Session.equals 'appType' 'admin'}}
+              <div class="menu-item">
+                <div class="menu-item-inside">
+                  <div class="ui-valign">
+                    {{_ 'menu.group'}} {{_ 'menu.members'}}
+                  </div>
+                </div>
+              </div>
+            {{/if}}
 
           </div>
         </div>
@@ -64,9 +76,11 @@
 
           </button>
 
-          <div class="menu-feature menu-switch">
-            {{_ 'menu.switch'}}
-          </div>
+          <a class="menu-feature" href="{{pathFor getOtherTypePath}}">
+            <div class="menu-switch">
+              {{getOtherTypeLabel}}
+            </div>
+          </a>
 
           <div class="menu-feature menu-logout">
 
