@@ -1,0 +1,18 @@
+@import '{}/client/scss/_aux';
+
+.main {
+  &-content {
+    height: 31.1rem;
+    overflow: visible;
+  }
+
+  &-content-panel {
+    width: 40.7rem;
+    height: 100%;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+}

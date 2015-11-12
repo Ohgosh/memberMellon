@@ -17,3 +17,7 @@
 
   main:
     viewAll: 'View All'
+    your: 'Your'
+    relevantMemberships: 'Relevant memberships'
+    popularEvents: 'Popular Events Nearby'
+    learnMore: 'Learn More'

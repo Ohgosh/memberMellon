@@ -6,14 +6,4 @@
     margin: auto;
     padding: 5rem 0 3rem;
   }
-
-  &-members-icon {
-    background: url('/img/main/members.png') no-repeat center / contain;
-    @include size(2.9rem 1.7rem);
-  }
-
-  &-events-icon {
-    background: url('/img/main/calendar.png') no-repeat center / contain;
-    @include size(2.3rem 2rem);
-  }
 }

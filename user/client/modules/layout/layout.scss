@@ -26,23 +26,17 @@ button {
 
 .topper, .footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
 }
 
 .app-container {
   padding: $topperHeight 0 $footerHeight $menuWidth;
   position: relative;
-  overflow: hidden;
 }
 
-.app-content, .app-modules {
-  height: 100%;
-}
-
-.app-modules {
-  height: 100%;
-  width: 100%;
+.app-content {
+  padding-bottom: $footerHeight;
 }
 
 .page-topper {
@@ -58,14 +52,80 @@ button {
   position: relative;
 }
 
+.panel-heading {
+  height: 3.3rem;
+  padding: 0 1.1rem;
+  background: $gray2;
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  color: white;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.panel-body {
+  padding: 4rem 1.1rem 0;
+}
+
+.panel-list-item {
+  height: 5.1rem;
+  position: relative;
+
+  &:last-child {
+    .panel-list-text {
+      color: $gray2;
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 0.1rem solid $gray3;
+  }
+}
+
+.panel-list-button {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size: 1.2rem;
+  @include size(7.5rem 3rem);
+}
+
+.panel-list-text {
+  padding-right: 8.6rem;
+  height: 100%;
+}
+
 .page-topper-panel {
   width: 26.6rem;
   height: 100%;
   float: left;
+  font-weight: 500;
 
   &:not(:last-child) {
     margin-right: 1.6rem;
   }
+}
+
+.topper-panel-tl, .topper-panel-bl {
+  width: 24rem;
+  margin: auto;
+  text-align: center;
+}
+
+.topper-panel-tl {
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+.topper-panel-bl {
+  margin-top: 1rem;
+  font-size: 6.7rem;
+  line-height: 6.7rem;
 }
 
 .topper-panel-button {
@@ -89,4 +149,9 @@ button {
 
 .button-label {
   @include mid-inline-block;
+}
+
+.slash {
+  color: $gray4;
+  font-weight: 700;
 }

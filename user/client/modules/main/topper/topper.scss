@@ -1,0 +1,23 @@
+@import '{}/client/scss/_aux';
+
+.main {
+  &-members-icon {
+    background: url('/img/main/members.png') no-repeat center / contain;
+    @include size(2.9rem 1.7rem);
+  }
+
+  &-events-icon {
+    background: url('/img/main/calendar.png') no-repeat center / contain;
+    @include size(2.3rem 2rem);
+  }
+
+  &-panel-settings {
+    &:before {
+      top: 3rem;
+      background: url('/img/main/panel_settings.png') no-repeat center / contain;
+      @include pseudo;
+      @include absolute-horizontal-centered;
+      @include size(12rem 8.7rem);
+    }
+  }
+}
