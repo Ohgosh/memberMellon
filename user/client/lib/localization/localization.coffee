@@ -14,3 +14,6 @@
     logout: 'Log out'
 
   footer: 'Member Melon © 2015'
+
+  main:
+    viewAll: 'View All'

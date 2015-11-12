@@ -8,32 +8,42 @@
           <div class="display-cell">
 
             <div class="menu-item active">
-              <div class="ui-valign">
-                {{_ 'menu.home'}}
+              <div class="menu-item-inside">
+                <div class="ui-valign">
+                  {{_ 'menu.home'}}
+                </div>
               </div>
             </div>
 
             <div class="menu-item">
-              <div class="ui-valign">
-                {{_ 'menu.events'}}
+              <div class="menu-item-inside">
+                <div class="ui-valign">
+                  {{_ 'menu.events'}}
+                </div>
               </div>
             </div>
 
             <div class="menu-item">
-              <div class="ui-valign">
-                {{_ 'menu.memberships'}}
+              <div class="menu-item-inside">
+                <div class="ui-valign">
+                  {{_ 'menu.memberships'}}
+                </div>
               </div>
             </div>
 
             <div class="menu-item unread">
-              <div class="ui-valign">
-                {{_ 'menu.notifications'}}
+              <div class="menu-item-inside">
+                <div class="ui-valign">
+                  {{_ 'menu.notifications'}}
+                </div>
               </div>
             </div>
 
             <div class="menu-item">
-              <div class="ui-valign">
-                {{_ 'menu.orders'}}
+              <div class="menu-item-inside">
+                <div class="ui-valign">
+                  {{_ 'menu.orders'}}
+                </div>
               </div>
             </div>
 
@@ -44,20 +54,28 @@
       <div class="menu-features">
         <div class="ui-valign">
 
-          <div class="menu-feature">
-            <button class="menu-settings green">
+          <button class="menu-feature menu-settings green">
+
+            <div class="menu-settings-icon settings-icon button-icon"></div>
+
+            <div class="button-label">
               {{_ 'menu.settings'}}
-            </button>
-          </div>
+            </div>
+
+          </button>
 
           <div class="menu-feature menu-switch">
             {{_ 'menu.switch'}}
           </div>
 
-          <div class="menu-feature">
-            <span class="menu-logout">
+          <div class="menu-feature menu-logout">
+
+            <div class="menu-logout-icon"></div>
+
+            <div>
               {{_ 'menu.logout'}}
-            </span>
+            </div>
+
           </div>
 
         </div>
