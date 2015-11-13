@@ -104,6 +104,10 @@
       @include size(1.5rem 3rem);
       @include pseudo;
     }
+
+    &:hover {
+      opacity: 0.85;
+    }
   }
 
   &-edit-icon, &-edit-label {
