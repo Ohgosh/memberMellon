@@ -1,5 +1,20 @@
 @import '{}/client/scss/_aux';
 
 .admin {
+  &-revenue-panel {
+    width: 75rem;
+    height: 25.5rem;
+    right: 0;
+    top: 0;
+    z-index: 1;
 
+    &.panel {
+      position: absolute;
+    }
+  }
+
+  &-revenue-chart {
+    position: relative;
+    z-index: 2;
+  }
 }
