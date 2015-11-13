@@ -23,7 +23,7 @@
   "app": "./",
 
   "env": {
-    "PORT": 8081,
+    "PORT": 3000,
     "ROOT_URL": "http://146.185.166.76",
     "MONGO_URL": "mongodb://127.0.0.1:13666/membermelon",
     "MONGO_OPLOG_URL": "mongodb://127.0.0.1:13666/local",
