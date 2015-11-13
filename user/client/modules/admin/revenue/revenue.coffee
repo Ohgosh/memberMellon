@@ -23,6 +23,8 @@ data = [
   val: 4100
 ]
 
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+
 createCoordinateRules = (lastMonthIndex)  ->
   x = d3.scale.linear()
     .domain([0, lastMonthIndex])
@@ -58,8 +60,7 @@ drawGrid = (g, x, y, lastMonthIndex) ->
     .attr('y1', h - y(increment * yLineIndex))
     .attr('x2', x(lastMonthIndex))
     .attr('y2', h - y(increment * yLineIndex))
-    .style('stroke', '#212121')
-    .style('opacity', '0.1')
+    .style('stroke', '#d7eafa')
     yLineIndex++
 
 drawChartLabels = (g, x, y) ->
@@ -74,7 +75,22 @@ drawChartLabels = (g, x, y) ->
     .attr('transform', 'translate(-20, 5)')
     .style('fill', '#353942')
     .style('text-anchor', 'end')
+
     yLineIndex++
+
+  xLineIndex = 0
+  while xLineIndex < months.length
+    g.append('text')
+    .attr('x', paddingLeft + x xLineIndex)
+    .attr('y', h)
+    .text(months[xLineIndex])
+    .attr('class', 'chart-label')
+    .attr('width', '100')
+    .attr('transform', 'translate(-25, 25)')
+    .style('fill', '#353942')
+    .style('text-anchor', 'middle')
+
+    xLineIndex++
 
 drawChartLines = (g, lineReal, data) ->
   g.append('svg:path')
@@ -82,6 +98,22 @@ drawChartLines = (g, lineReal, data) ->
   .style('stroke-width', 3)
   .style('fill', 'none')
   .attr('d', lineReal(data))
+
+drawChartDividers = (g, x, y, data) ->
+  g.selectAll('.chart-divider')
+    .data(data.slice(1, -1))
+    .enter()
+    .append('rect')
+    .attr('width', 3)
+    .attr('height', 6)
+    .style('fill', '#d7eafa')
+    .attr('class', 'chart-divider')
+    .attr(
+      x: (d, index) ->
+        (x (index + 1)) - 1
+      y: (d, index) ->
+        h - 6
+    )
 
 drawLineChart = (data, elementID) ->
   lastMonthIndex = data.length - 1
@@ -98,6 +130,7 @@ drawLineChart = (data, elementID) ->
   drawChartLabels g, coordinates.x, coordinates.y
 
   drawChartLines g, lines.lineReal, data
+  drawChartDividers g, coordinates.x, coordinates.y, data
 
 Template.adminRevenue.onRendered ->
   maxY = ((_.max data, (item) ->
