@@ -1,6 +1,7 @@
 @import "{}/client/scss/aux";
 
 .footer {
+position: relative !important;
   bottom: 0;
   height: $footerHeight;
   background: $dark2;

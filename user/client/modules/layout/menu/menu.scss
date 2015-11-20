@@ -38,7 +38,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: $dark;
+  background: $dark2;
   z-index: 11;
   padding: $topperHeight 0 $footerHeight;
   text-align: center;
@@ -47,6 +47,7 @@
     height: 100%;
     padding-bottom: $footerFeaturesHeight;
     position: relative;
+    background: $dark;
   }
 
   &-items {

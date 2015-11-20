@@ -5,27 +5,30 @@
     text-align: left;
     text-transform: none;
     font-weight: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 
     @include gt(1920) {
   		height: 5.5rem;
   	}
 
   	@include gt(1136, 1919) {
-  		height: 3.3rem;
+  		height: 5.5rem;
   	}
 
   	@include gt(800, 1135) {
-  		height: 2.8rem;
+  		height: 5.5rem;
   	}
 
   	@include lt(799) {
-  		height: 2.3rem;
+  		height: 5.5rem;
   	}
   }
+}
 
-  .select2-dropdown {
-  	border: none;
-  }
+.select2-dropdown {
+  border: none !important;
 }
 
 .select2-container {
@@ -41,57 +44,68 @@
     }
 
     .select2-results__option {
-      padding: 0 1rem;
+      padding: 0 2rem;
+      position: relative;
+      &:before{
+        content: '';
+        width: 98%;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 2%;
+        border-top: 1px solid #ccc;
+        display: block;
+      }
 
       &[aria-selected="true"], &:first-child {
         display: none;
       }
 
       @include gt(1920) {
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         line-height: 5.5rem;
       }
 
       @include gt(1136, 1919) {
-        font-size: 1.4rem;
-        line-height: 3.3rem;
+        font-size: 1.6rem;
+        line-height: 5.5rem;
       }
 
       @include gt(800, 1135) {
-        font-size: 1.2rem;
-        line-height: 2.8rem;
+        font-size: 1.6rem;
+        line-height: 5.5rem;
       }
 
       @include lt(799) {
-        font-size: 1rem;
-        line-height: 2.3rem;
+        font-size: 1.6rem;
+        line-height: 5.5rem;
       }
     }
 
     .select2-selection--single {
-      background: rgba(19, 120, 190, 0.21);
-      border-radius: 0;
+      background: white;
       border: none;
+      border-radius: 5px;
 
       .select2-selection__rendered {
         height: 100%;
-        padding: 0 1rem;
-        color: blue;
+        padding: 0 2rem;
+        color: $dark;
 
         @include gt(1920) {
       		line-height: 5.5rem;
       	}
 
       	@include gt(1136, 1919) {
-      		line-height: 3.3rem;
+      		line-height: 5.5rem;
       	}
 
       	@include gt(800, 1135) {
-      		line-height: 2.8rem;
+      		line-height: 5.5rem;
       	}
 
       	@include lt(799) {
-      		line-height: 2.3rem;
+      		line-height: 5.5rem;
       	}
       }
 
@@ -99,7 +113,8 @@
         height: 100%;
         right: 0;
         top: 0;
-        background: blue;
+        background: white;
+        border-radius: 5px;
 
         @include gt(1920) {
       		width: 5.5rem;
@@ -125,7 +140,7 @@
           left: 0;
           right: 0;
           margin: auto;
-          background: url('/img/select2/arrow.png') no-repeat center / contain;
+          background: url('/img/arrow-down-select.png') no-repeat center / contain;
         }
       }
     }
