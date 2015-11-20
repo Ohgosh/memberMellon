@@ -10,11 +10,16 @@
   position: relative;
   width: 100%;
   height: 60px;
+  margin-bottom: 70px;
   .left {
     float: left;
   }
   .right {
     float: right;
+  }
+  .center {
+    position: absolute;
+    left: 40%;
   }
   .step-wrap {
     .step-descr {
@@ -59,8 +64,7 @@
   }
 }
 
-.welcome-email {
-  margin-top: 70px;
+.welcome-email, .textarea-wrap {
   position: relative;
   textarea {
     position: relative;

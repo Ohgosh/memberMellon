@@ -1,2 +1,2 @@
-Template.aboutGroup.onRendered ->
+Template.createNewEvent.onRendered ->
   Session.set 'appType', 'admin'
