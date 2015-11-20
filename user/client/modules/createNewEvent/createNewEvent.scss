@@ -1,0 +1,103 @@
+@import "{}/client/scss/all";
+
+.create-new-event-wrap {
+  .page-block-label {
+    margin-bottom: 13px;
+  }
+}
+
+.circle-diagram {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .step-wrap {
+    .step-descr {
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: $gray2;
+      margin-top: 13px;
+    }
+    &.active {
+     .step-descr {
+       color: $blue;
+     }
+      .step {
+        background-color: $blue;
+      }
+    }
+  }
+  .step {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: $gray2;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+    span {
+      color: white;
+      display: block;
+    }
+  }
+  &:after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: $gray2;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    z-index: -1;
+  }
+}
+
+.welcome-email {
+  margin-top: 70px;
+  position: relative;
+  textarea {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    height: 216px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid #c5c8ca;
+    background-color: white;
+  }
+  .save-email-text {
+    float: right;
+    margin-right: 30px;
+    text-decoration: underline;
+    color: $blue;
+    &:hover {
+      color: lighten($blue, 10%) ;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 20px 20px;
+      border-color: transparent transparent #2195d7 transparent;
+      position: absolute;
+      right: 0;
+      bottom: 27px;
+    }
+  }
+}
+
+
+button.next {
+  position: relative;
+  float: right;
+}
