@@ -1,2 +1,2 @@
 Template.aboutGroup.onRendered ->
-  Session.set 'appType', 'user'
+  Session.set 'appType', 'admin'

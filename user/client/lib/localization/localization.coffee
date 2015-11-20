@@ -16,7 +16,7 @@
 
     switch:
       user: 'Switch to Group Admin'
-      admin: 'Switch to  Personal Dashboard'
+      admin: 'Switch to Personal Dashboard'
 
   footer: 'Member Melon © 2015'
 

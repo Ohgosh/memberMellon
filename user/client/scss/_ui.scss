@@ -124,7 +124,59 @@ button {
 		}
 	}
 }
+.green.shrink {
+	width: 4.5rem;
+}
 
 img {
 	display: block;
 }
+
+.bread-crumbs {
+	color: $gray2;
+	margin-bottom: 25px;
+	a {
+		text-decoration: underline;
+	}
+}
+
+.settings-sections {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $gray2;
+	text-align: center;
+	span {
+		display: inline-block;
+		&:first-of-type:before {
+			display: none;
+		}
+		&:before {
+			content: "|";
+			color: $gray2;
+			margin: 0 20px;
+			font-size: 20px;
+			font-weight: 300;
+		}
+
+		&.active {
+			color: $blue;
+		}
+		&.error {
+			color: $orange;
+		}
+	}
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
