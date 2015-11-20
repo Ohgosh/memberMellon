@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="664ad43f-28cf-4285-b316-9dc8a9dc7553" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.coffee" afterPath="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss" afterPath="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.html" afterPath="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss" afterPath="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss" />
     </list>
     <ignored path="membermelon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,31 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createNewMembership.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.html">
+      <file leaf-file-name="createNewMembership2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19448946">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state vertical-scroll-proportion="-0.12155592">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createNewMembership.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss">
+      <file leaf-file-name="createNewMembership2.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createNewEvent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.333334">
-              <caret line="29" column="10" selection-start-line="23" selection-start-column="4" selection-end-line="29" selection-end-column="10" />
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -79,9 +69,17 @@
         <option value="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.coffee" />
         <option value="$PROJECT_DIR$/user/client/modules/createNewMembership/router.coffee" />
         <option value="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.coffee" />
-        <option value="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.coffee" />
         <option value="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership3/route.coffee" />
         <option value="$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.html" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.html" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.coffee" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership2/route.coffee" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.scss" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.scss" />
+        <option value="$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.html" />
       </list>
     </option>
   </component>
@@ -324,33 +322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="createNewMembership" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="membermelon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="membermelon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="createNewEvent" />
+              <option name="myItemId" value="createNewMembership2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,14 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023400936">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/router.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -755,30 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/router.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023400936">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.333334">
-          <caret line="29" column="10" selection-start-line="23" selection-start-column="4" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.066450566">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/client/scss/helpers/_select2.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125">
@@ -787,18 +727,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss">
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.023400936">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/router.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19448946">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6839546">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="62" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16045381">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership/createNewMembership.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09724473">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewEvent/createNewEvent.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2641815">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.023400936">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26094005">
+          <caret line="95" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership3/route.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.023400936">
+          <caret line="1" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/route.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.023400936">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership3/createNewMembership3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/client/modules/createNewMembership2/createNewMembership2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12155592">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding />
         </state>
       </provider>
