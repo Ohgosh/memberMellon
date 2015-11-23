@@ -6,22 +6,6 @@
     margin-bottom: 13px;
   }
 
-  .textarea-wrap {
-    &:after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 20px 20px;
-      border-color: transparent transparent #2195d7 transparent;
-      position: absolute;
-      right: 0;
-      bottom: 5px;
-      visibility: visible;
-    }
-  }
-
   .select2-dropdown {
     border: none !important;
   }
@@ -37,4 +21,20 @@ input {
   border-radius: 5px;
   width: 100% !important;
   height: 57px;
+}
+
+.textarea-wrap {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #2195d7 transparent;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    visibility: visible;
+  }
 }
