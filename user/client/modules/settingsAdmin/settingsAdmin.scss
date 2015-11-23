@@ -82,9 +82,21 @@
 .panel-list-select {
   float: left;
   width: 57%;
+  .select2-selection__rendered {
+    padding: 0 2rem 0 0 !important;
+  }
+  .select2-container--open .select2-dropdown {
+    left: -13px;
+  }
 }
 
 .panel-list-select-with-btn {
   float: left;
   width: 49%;
+  .select2-selection__rendered {
+    padding: 0 2rem 0 0 !important;
+  }
+  .select2-container--open .select2-dropdown {
+    left: -13px;
+  }
 }
