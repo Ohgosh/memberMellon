@@ -137,6 +137,9 @@ img {
 	margin-bottom: 25px;
 	a {
 		text-decoration: underline;
+		&:hover {
+			color: darken($gray2, 10%);
+		}
 	}
 }
 
@@ -145,8 +148,11 @@ img {
 	font-weight: 500;
 	color: $gray2;
 	text-align: center;
-	span {
+	a {
 		display: inline-block;
+		&:hover {
+			color: darken($gray2, 10%);
+		}
 		&:first-of-type:before {
 			display: none;
 		}
